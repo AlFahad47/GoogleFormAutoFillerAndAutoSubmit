@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Submit Toggle",
+  "version": "5.0",
+  "description": "Auto-checks and submits a form if toggle is enabled.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

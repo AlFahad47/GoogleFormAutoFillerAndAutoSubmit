@@ -1,0 +1,161 @@
+
+.footer-buttons button {
+  font-family: "Segoe UI Emoji", "Segoe UI", sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* height: 100vh; */
+  }
+  
+  .container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 400px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .icon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .switch-div h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .row input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .add-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin: 15px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .donate {
+    background-color: #4CAF50;
+    color: black;
+  }
+  
+  .github {
+    background-color: #4CAF50;
+  }
+  
+  .info {
+    background-color: #1575b4;
+  }
+  
+  button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 6px;
+  }
+
+  .switch {
+    display: flex;
+
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #4CAF50;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+
+  .switch-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .label span {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+      
+
+  
